@@ -2,15 +2,8 @@
 {
     partial class Form1
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +15,6 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
@@ -43,6 +32,7 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.dgvMahasiswa = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMahasiswa)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,14 +100,14 @@
             this.txtTelepon.Location = new System.Drawing.Point(307, 135);
             this.txtTelepon.Name = "txtTelepon";
             this.txtTelepon.Size = new System.Drawing.Size(100, 22);
-            this.txtTelepon.TabIndex = 7;
+            this.txtTelepon.TabIndex = 8;
             // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(307, 103);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(100, 22);
-            this.txtEmail.TabIndex = 8;
+            this.txtEmail.TabIndex = 7;
             // 
             // txtAlamat
             // 
@@ -134,7 +124,7 @@
             this.btnTambah.TabIndex = 10;
             this.btnTambah.Text = "Tambah";
             this.btnTambah.UseVisualStyleBackColor = true;
-            this.btnTambah.Click += new System.EventHandler(this.BtnTambah);
+            this.btnTambah.Click += new System.EventHandler(this.BtnTambah_Click);
             // 
             // btnHapus
             // 
@@ -144,7 +134,7 @@
             this.btnHapus.TabIndex = 11;
             this.btnHapus.Text = "Hapus";
             this.btnHapus.UseVisualStyleBackColor = true;
-            this.btnHapus.MouseCaptureChanged += new System.EventHandler(this.BtnHapus);
+            this.btnHapus.Click += new System.EventHandler(this.BtnHapus_Click);
             // 
             // btnUpdate
             // 
@@ -154,6 +144,7 @@
             this.btnUpdate.TabIndex = 12;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
             // btnRefresh
             // 
@@ -163,7 +154,7 @@
             this.btnRefresh.TabIndex = 13;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
-            this.btnRefresh.Click += new System.EventHandler(this.BtnRefresh);
+            this.btnRefresh.Click += new System.EventHandler(this.BtnRefresh_Click);
             // 
             // dgvMahasiswa
             // 
@@ -176,11 +167,22 @@
             this.dgvMahasiswa.TabIndex = 14;
             this.dgvMahasiswa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMahasiswa_CellClick);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(557, 183);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(112, 23);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Import Data";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dgvMahasiswa);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnUpdate);
@@ -221,6 +223,6 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.DataGridView dgvMahasiswa;
+        private System.Windows.Forms.Button button1;
     }
 }
-
